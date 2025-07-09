@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@upstash/search-crawler": "^0.1.3"
+    "@upstash/search-crawler": "^0.1.4-rc"
   }
 }
