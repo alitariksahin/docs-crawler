@@ -6,7 +6,7 @@ export default function handler(req, res) {
   const docsUrl = process.env.DOCS_URL || "https://your-docs-url.com";
   const index = process.env.UPSTASH_INDEX || "default";
 
-  const cmd = `npx @upstash/search-crawler --upstash-url ${url} --upstash-token ${token} --index-name ${index} --doc-url ${docsUrl}`;
+  const cmd = `./node_modules/.bin/search-crawler --token ${token} --url ${url} --index ${index} --docs-url ${docsUrl}`;
 
   exec(cmd, (error, stdout, stderr) => {
     if (error) {
